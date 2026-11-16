@@ -1,9 +1,0 @@
-Claim (under the hour chart): In November 2025, Noise - Residential complaints peak at hour 22 (10:00–10:59 PM) with 3,878 complaints, while HEAT/HOT WATER complaints peak at hour 9 (9:00–9:59 AM) with 2,799 complaints, 
-showing an evening/night noise rhythm versus a morning-centered heating/hot-water rhythm. These plotted peak hours match value_counts()/grouped counts on the same filtered, parsed data (Noise - Residential: hour 22, 3,878; 
-HEAT/HOT WATER: hour 9, 2,799).
-Heat map (fig-nights.png, day × hour table: 30 rows × 24 columns) — 5 sentences: The overall shape is broadly similar on many nights (nighttime activity for noise and daytime/morning activity for heating), 
-but it is not the same every night, with several dates showing much higher or lower intensity. One night that stands out is 2025-11-02 at hour 1 (1:00–1:59 AM), with 371 complaints in that cell (highest z-score anomaly, 
-z≈3.58, vs a mean of ~118.5 for hour 1 across days). I think this spike was caused by the end of daylight saving time on 2025-11-02 (clocks fell back), which makes the labeled 1 AM clock hour cover a repeated local hour and 
-can concentrate reports there, alongside normal late-night activity. To rule out boring explanations, I ran (1) a bad/duplicated-rows check on that slice (371 rows, 371 unique Unique Keys, 0 duplicate keys, 0 fully duplicated rows, 
-0 null Unique Key/Created Date) and (2) a burst-characterization check showing it reflects many real records rather than a malformed bulk insert (353 distinct Created Date timestamps, spread across boroughs and both problem types, 
-with at most 3 identical timestamps). The cause is still a hypothesis, but the checks support treating the spike as a real pattern in the recorded data rather than a parsing or duplication artifact.
