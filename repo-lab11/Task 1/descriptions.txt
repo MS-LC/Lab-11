@@ -1,0 +1,9 @@
+1. Rows and columns: 304905 rows, 44 columns  
+- Verify: library 304905 vs zcat nyc-311-2025-november.csv.gz | wc -l data rows 304905 (304906 total minus header)
+2. Distinct Problem (formerly Complaint Type): 174  
+- Verify: pandas nunique 174 vs streaming csv.DictReader unique-set count 174
+3. Earliest / latest Created Date (parsed before compare): earliest 2025-11-01 00:00:04, latest 2025-11-30 23:59:52  
+- Verify: pandas parsed min/max match streaming strptime min/max
+4. Rows with no Closed Date: 4136  
+- Status values: {'In Progress': 3402, 'Open': 300, 'Pending': 199, 'Assigned': 168, 'Started': 65, 'Closed': 2}  
+- Verify: pandas empty/NA filter count 4136 vs streaming empty-field filter count 4136; status breakdowns match (same counts)
