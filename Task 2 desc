@@ -1,0 +1,19 @@
+Chosen borough: Bronx (alphabetical). Second borough for comparison: Manhattan.
+Bronx (total 74,674 complaints)
+Top 5 complaints (count and share of borough total):
+Rank	Complaint type	Count	Share of Bronx total
+1	Noise - Residential	22,216	29.75%
+2	HEAT/HOT WATER	16,671	22.33%
+3	Illegal Parking	6,900	9.24%
+4	UNSANITARY CONDITION	3,148	4.22%
+5	Blocked Driveway	2,527	3.38%
+Address trap (counts measure calls, not people): The Bronx’s #1 complaint is dominated by a single address: 655 EAST 230 STREET accounts for 14,361 of the 22,216 Noise - Residential complaints (64.64% of that complaint type in the Bronx). A small number of locations/callers can drive a large share of the count, so these figures should not be read as the prevalence of noise experienced by residents overall.
+Chart: Saved as fig-borough-bronx.png (bar chart of Bronx top 10 complaint types, with labeled axes and title).
+Bronx vs. Manhattan (3–5 sentences)
+In November 2025, the Bronx’s top complaints were led by Noise - 
+Residential (29.75%) and HEAT/HOT WATER (22.33%), 
+while Manhattan’s top five were HEAT/HOT WATER (11,438; 18.46%), 
+Noise - Residential (6,024; 9.72%), Illegal Parking (5,910; 9.54%), 
+Noise - Street/Sidewalk (3,029; 4.89%), 
+and Encampment (2,967; 4.79%) out of 61,956 total complaints. 
+Compared with the Bronx, Manhattan shows a more mixed profile with relatively more street/public-space issues (street noise, encampment, illegal parking) and a smaller share concentrated in a single residential-noise category. Hypothesis: these differences may reflect differences in land use and density (more commercial/tourist and sidewalk activity in Manhattan), housing/building conditions and heating complaint patterns, and reporting behavior—but the data cannot prove causes, and as seen in the Bronx, repeated calls from specific addresses can also skew category totals.
