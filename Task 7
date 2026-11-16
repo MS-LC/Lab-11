@@ -1,0 +1,7 @@
+I found that the 196 Borough = Unspecified rows are a concentrated anomaly: they are disproportionately tied to non-place-specific or weakly geocoded service categories (e.g., TLC and DOT dominate, 
+with top problems like Ferry Inquiry/Complaint, Taxi/For-Hire complaints, Derelict Vehicles, and Traffic Signal Condition) and are largely missing standard location fields. 
+Query 1 profiled these rows by agency/problem/location type/channel (n=196; agencies led by TLC 70, DOT 59, DSNY 30; problems led by Ferry Inquiry 29, Taxi Complaint 24, Derelict Vehicles 23; channels ONLINE 89, PHONE 67, UNKNOWN 36). 
+Query 2 checked location completeness and geography (Incident Zip missing/blank in 176, Incident Address missing/blank in 163, Latitude/Longitude missing in 183, and City mostly missing but occasionally outside NYC such as Buffalo, Albany, 
+and San Francisco). Query 3 drilled into dominant subgroups (38 ferry-related rows almost all with Location Type Ferry/Terminal and no address/zip/coordinates; 58 taxi/for-hire rows mostly lacking addresses/zips; plus a few rows with non-NYC cities/zips), 
+showing the pattern is driven by records that are not easily tied to a single NYC borough. Verdict: mixed/mostly cannot be fully resolved from this file alone—many cases look like a real or structural “unspecified/un-geocoded” reporting category 
+(especially ferries and some taxi/inquiry reports), but the small subset with out-of-area cities or mismatched location details suggests some data-entry or attribution artifacts.
